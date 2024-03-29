@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+
+    
+    height: 400vh;
+}
+/*home page hight and color background*/
+#home{
+    
+    background-color: #390439;
+    background-image:linear-gradient(0deg,#2a0a2a 0%,#0c3e43 100%);
+    height: 100vh;
+}
+/*About page hight and color background*/
+#about{
+    
+ background-color: #0c3e43;
+    background-image:linear-gradient(0deg,#0c3e43 0%,#2a0a21 100%);
+    height: 100vh;
+}
+/*skil page hight and color background*/
+#skills{
+    background-color: #390439;
+    background-image:linear-gradient(0deg,#2a0a2a 0%,#0c3e43 100%);
+    height: 100vh;
+}
+/*contact page hight and color background*/
+#contact{
+    background-color: #0c3e43;
+    background-image:linear-gradient(0deg,#0c3e43 0%,#2a0a21 100%);
+    height: 100vh;
+}
+/*Navbar create*/
+.nav{
+    max-width: 80vw;
+    height: 10vh;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    margin: auto;
+    position: fixed;
+}
+.nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style:none;
+}
+.nav-list li{
+    margin: 25px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.nav-list li:hover{
+border-bottom: 3px solid rgb(120, 198, 243);
+border-bottom-left-radius: 20%;
+border-bottom-right-radius: 20%;
+padding-bottom: 6px;
+
+}
+/*left side div text */
+.para {
+    color: white;
+    font-size: 30px;
+}
+.para1 span{
+    font-size: 35px;
+    color:rgb(70, 208, 243) ;
+}
+.para2{
+    font-size: 40px;
+    color:rgb(209, 72, 72)  ;
+}
+.para3{
+    font-size: 20px;
+    margin-left: 5px;
+}
+/* right side div image*/
+.right img{
+    width: 250px;
+    height: 230px;
+    border-radius: 20% 0%;
+    box-shadow: 0px 0px 80px rgb(236, 4, 198);
+    cursor: pointer;
+}
+.right img:hover{
+    box-shadow: 0px 0px 80px rgb(4, 8, 236);
+    transform: translateY(-30px);
+    transition: transform 0.5s ;
+}
+/* height width both left and right div*/
+.main1{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+/*margin for gapping left and right div */
+.m{
+    margin: 120px;
+}
+/*Button of about page */
+.btn button{
+    padding: 5px 10px;
+    background-color:rgba(223, 154, 210, 0.849);
+    color: white;
+    border-radius: 6px;
+    border: 2px solid white;
+    cursor: pointer;
+    }
+    .btn2:hover{
+        background-color:rgb(252, 102, 227);
+        box-shadow: 0px 20px 80px rgba(238, 83, 212, 0.849);
+    }
+.btn{
+    margin-top:20px ;
+}
+/*about page start*/
+#about h3{
+text-align: center;
+color: white;
+font-size: 30px;
+padding-top: 30px;
+}
+#about h3 span{
+    color: rgba(109, 189, 226, 0.904);
+}
+#skills h3 {
+    text-align: center;
+color: white;
+font-size: 30px;
+padding-top: 30px;
+}
+#skills h3 span{
+    color: rgba(109, 189, 226, 0.904);
+}
+/*left side box personal info  about page and for skill page*/
+.left2{
+    width: 400px;
+    height: 400px;
+    background-color: white;
+}
+/* right side education box details of about page and skill page  */
+.right2{
+    width: 400px;
+    height: 400px;
+    background-color: white;
+}
+/*to fix left and right of About page and skill page */
+.main2{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+/*for give background color and shadow left and right to About page and Skill page */
+.m2{
+    margin: 0px 120px ;
+    background-color: rgba(6, 24, 59, 0.212);
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 0px 80px rgb(236, 4, 198);
+    border-radius: 15px;
+}
+.m2:hover{
+    box-shadow: 0px 0px 80px rgb(4, 8, 236);
+    transform: translateY(-30px);
+    transition: transform 0.5s ;
+    background-color:rgba(236, 4, 197, 0.281);
+    
+    border-bottom: 4px solid rgba(209, 13, 209, 0.911);
+
+}
+.m2 h4{
+    text-align: center;
+color: white;
+font-size: 20px;
+padding: 15px 0px;
+border-bottom-left-radius: 23%;
+border-bottom-right-radius: 23%;
+border-bottom: 2px solid rgb(90,160,209);
+}
+.m2 h4 span{
+    color: rgba(109, 189, 226, 0.904);
+}
+/* left text name etc to about page and skill page*/
+.line1{
+    margin: 20px 0px 4px 10px;
+    color: white;
+}
+.line span{
+    color: rgb(16, 142, 245);
+}
+.line{
+    margin: 15px 20px;
+    color: white;
+}
+/*Skills page left side ke saame vaala box jisme kitni complete ho gyi fill hai*/
+.progress{
+    display: inline-block;
+    width: 75%;
+    height: 9px;
+    border: 2px solid rgb(197, 172, 172);
+    margin-left: 15px;
+    border-radius: 8px;
+}
+/* for fix centre */
+.prog{
+    display: flex;
+    align-items: center;
+}
+/* for fill siklls how much complete color*/
+.inner{
+    border-radius: 4px;
+    display: block;
+width: 100%;
+height: 9px;
+background-color:rgb(38, 142, 202);
+animation: progress1 2s linear 1;
+}
+.inner3{
+    width: 60%;
+    animation: progress3 2s linear 1; 
+}
+.inner6{
+    width: 80%;
+    animation: progress2 2s linear 1; 
+}
+.prog2{
+    margin-left: 31px;
+    
+}
+.prog3{
+    margin-left: 44px;
+
+}
+.prog4{
+  margin-left: 48px;
+    
+}
+.prog5{
+margin-left: 28px;
+}
+.prog6{
+    margin-left: 24px;
+    } 
+    /* contact page */
+#contact h3{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding-top: 30px;
+}
+    #contact h3 span{
+        color: rgb(66,178, 207);
+    }
+     /* contact page height set and all background properties */
+.con{
+    width: 60vw;
+    height: 60vh;
+    background-color: rgba(6, 24, 59, 0.212);
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 0px 80px rgb(236, 4, 198);
+    border-radius: 20px;
+    border-bottom: 2px solid rgb(90,160,209);
+    margin:auto;
+    margin-top: 6%;
+}
+.con:hover{
+    box-shadow: 0px 0px 80px rgb(4, 8, 236);
+    transform: translateY(-30px);
+    transition: transform 0.5s ;
+    background-color:rgba(236, 4, 197, 0.281);
+    
+    border-bottom: 4px solid rgba(209, 13, 209, 0.911);
+
+}
+.con h4{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 15px 0px;
+    border-bottom-left-radius: 23%;
+    border-bottom-right-radius: 23%;
+    border-bottom: 2px solid rgb(90,160,209);  
+}
+.con h4 span{
+    color:rgb(90,160,209) ;
+}
+.images{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 90px;
+}
+.images img{
+    width: 6vw;
+    cursor: pointer;
+
+}
+.images img:hover{
+    transform: translateY(-22px);
+    transition:transform o.5s ;
+}
+/*for make responsive  home page */
+@media only screen and (max-width: 768px){
+    .main2{
+        flex-direction: column;
+    }
+    .m2{
+        width: 300px;
+        height: 300px;
+    }
+    .left2{
+        margin-bottom: 60px;
+    } 
+}
+@media only screen and (max-width: 1063px){
+    .main1{
+        flex-direction: column-reverse;
+        height: 70vh;
+    }
+    .m{
+        
+        margin: 0px;
+    }
+    .right img{
+        margin-top: 130px;
+
+    }
+    .left{
+       margin-top: 40px; 
+    }
+}
+/*.main2{
+    flex-direction: column;
+}*/
+@media only screen and (max-width: 543px){
+
+    .nav-list li{
+        font-size:15px;
+    }
+}
+@media only screen and (max-width: 471px){
+    .nav-list li{
+        margin:15px ;
+    }
+}
+/* responsive about page*/
+@media only screen and (max-width: 375px){
+    .nav-list li{
+        margin:15px ;
+    }  
+    .para {
+        font-size: 15px;
+    }
+    .para1 span{
+        font-size: 18px;
+        
+    }
+    .para2{
+        font-size: 20px;
+    
+    }
+    .para3{
+        font-size: 10px;
+        margin-left: 2px;
+    }
+}
+@media only screen and (max-width: 371px){
+    .nav-list li{
+        margin:7px ;
+   } 
+}
+@media only screen and (max-width: 291px){
+    .nav-list li{
+        margin:3px ;
+   } 
+}
+/* Animation for skill pages line filling*/
+  @keyframes progress1 { 
+    from{
+        width: 0px;
+    }
+    to{
+        width: 100%;
+    }
+}
+@keyframes progress2 { 
+    from{
+        width: 0px;
+    }
+    to{
+        width: 80%;
+    }
+}
+@keyframes progress3 { 
+    from{
+        width: 0px;
+    }
+    to{
+        width: 60%;
+    }
+}
+
+    </style>
+
+
+    <title>Portfolio</title>
+</head>
+<body>
+   <section id="home">
+    <div class="nav">
+        <ul class="nav-list">
+       <a href="#home"> <li>Home</li></a>
+       <a href="#about"> <li>About</li></a>
+       <a href="#skills"> <li>Skills</li></a>
+       <a href="#contact"> <li>Contact Us</li></a>
+        </ul>
+    </div>
+    <div class="main1">
+        <div class="lef m">
+         <p class="para para1">I'm <span>Aarav Chaudhary</span></p>
+            <P class="para para2">WEB DEVELOPER</P>
+            <p class="para para3"> For More details click below</p>
+            <div class="btn ">
+                <button class="btn2">Download CV</button>
+                <button class="btn2">View Project</button>
+            </div>
+        </div>
+            <div class="right m">
+                    <img src="data:image/jpeg;base64,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"alt="logo">
+                </div>
+            </div>
+    
+    </div>
+   </section> 
+   <section id="about">
+    <h3>About <span> Me </span></h3>
+    <div class="main2">
+        <div class="left2 m2">
+            <h4>Personal <span>Information</span></h4>
+            <p class="line line1">Full Name : <span>Aarav Chaudhary</span></p>
+            <p class="line line2">Age : <span>22</span></p>
+            <p class="line line1">Nationality : <span>India</span></p>
+            <p class="line line1">Addres : <span>UP,India</span></p>
+            <p class="line line1">Contact No : <span>8279812344</span></p>
+            <p class="line line1">Email Id : <span>aaravchaudhary465@gmail.com</span></p>
+        </div>
+        <div class="right2 m2">
+        
+            <h4>Education <span>Details</span></h4>
+            <p class="line line1">10th Pass Out Year : <span>2018</span></p>
+            <p class="line line2">10th % : <span>84%</span></p>
+            <p class="line line1">12th Pass Out Year : <span>2020</span></p>
+            <p class="line line2">12th % : <span>70%</span></p>
+            <p class="line line1">Highest Education : <span>BCA</span></p>
+            <p class="line line1">Pass Out Year : <span>2023</span></p>
+            <p class="line line1">Percentage : <span>67%</span></p>
+            <p class="line line1">Persuing : <span>MCA</span></p>
+
+        
+        </div>
+    </div>
+   </section>
+   <section id="skills">
+    <h3> My <span>Skils</span></h3>
+    <div class="main2">
+        <div class="left2 m2">
+            <h4>Known <span>Languages</span></h4>
+            <p class="line line1 prog ">HTML : <span class="progress prog1"><span class="inner   inner1"></span></span></p>
+            <p class="line line2 prog">CSS : <span class="progress prog2"><span class="inner inner2"></span></span></p>
+            <p class="line line3 prog">JS : <span class="progress prog3"><span class="inner inner3"></span></span></p>
+            <p class="line line4 prog">C : <span class="progress prog4"><span class="inner inner4"></span></span></p>
+            <p class="line line5 prog">SQL : <span class="progress prog5"><span class="inner inner5"></span></span></p>
+            <p class="line line6 prog">JAVA : <span class="progress prog6"><span class="inner inner6"></span></span></p>
+        </div>
+        <div class="right2 m2">
+            <h4>My <span>Project</span></h4>
+            <p class="line line1">Project1 : <span> Traveling Wbsite</span></p>
+            <p class="line line2">Project2 : <span>Hospital Managemet</span></p>
+            <p class="line line1">Project3 : <span>Travel Managaement</span></p>
+            <p class="line line2">Project4 : <span>Calculator</span></p>
+            <p class="line line1">Project5 : <span>My Portfolio</span></p>
+            
+        </div>
+
+    </div>
+   </section>
+   <section id="contact">
+    <h3>Contact <span>Us</span></h3>
+    <div class="con">
+        <h4>Contact Us <span>Directly</span></h4>
+        <div class="images">
+            <img src="insta.png" alt="Instagram">
+            <img src="fb.png" alt="Facebook">
+            <img src="twi.png" alt="Twitter">
+            <img src="li.png" alt="Linkedin">
+        </div>
+    </div>
+   </section>
+</body>
+</html>
